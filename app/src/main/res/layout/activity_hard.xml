@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#179C27B0">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:layout_above="@+id/bottomButton"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/optionsRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:shadowColor="#673AB7"
+                    android:text="Hard Question"
+                    android:textColor="#800080"
+                    android:textSize="34sp"
+                    android:textStyle="bold|italic" />
+
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/quizListView"
+                android:layout_width="match_parent"
+                android:layout_height="572dp"
+                android:nestedScrollingEnabled="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bottomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:maxWidth="350dp"
+        android:text="Submit Answers"
+        style="@style/Widget.AppCompat.Button" />
+
+
+
+
+</RelativeLayout>
